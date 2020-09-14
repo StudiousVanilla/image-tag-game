@@ -13,7 +13,7 @@
     v-show="pictureNumber == 0">
       <div>
         <button class="picture-select" 
-        @click="pictureNumber = 1, pictureFolder = 'star'"
+        @click="pictureNumber = 1, pictureFolder = 'star', inGame = true,startTimer()"
         style="color:gold">Star Wars</button>
         <ol>
           <li>John: 40</li>
@@ -25,7 +25,7 @@
       </div>
       <div>
       <button class="picture-select" 
-      @click="pictureNumber = 2, pictureFolder = 'wedding'"
+      @click="pictureNumber = 2, pictureFolder = 'wedding', inGame = true,startTimer"
       style="color:red">Wedding</button>
         <ol>
           <li>John: 40</li>
@@ -37,7 +37,7 @@
       </div>
       <div>
       <button class="picture-select" 
-      @click="pictureNumber = 3, pictureFolder = 'waldo'"
+      @click="pictureNumber = 3, pictureFolder = 'waldo', inGame = true, startTimer"
       style="color:lightgreen">Waldo</button>
        <ol>
           <li>John: 40</li>
@@ -70,14 +70,26 @@ export default {
   },
   data(){
     return{
+      // controls which game image is shown
       pictureNumber: 0,
       pictureFolder:'waldo',
-      portrait1: 'Boss Nass',
+      portrait1: 'Boss Nass', // add dynamic reference to portrait and options
       portrait2: 'Fodesinbeed Annodue',
       portrait3: 'Nunb',
-      timer: '',
+      timer: 0, // recprds ueser score
+      inGame: false, // marks start/end of game for score
     }
+  },
+
+  methods:{
+    startTimer(){
+      setInterval(() => this.timer++, 1000)
+    },
+
+
   }
+
+  
 }
 </script>
 
@@ -125,5 +137,17 @@ ol{
   font-size: 20px;
   font-weight: 500;
   background-color: rgb(46, 45, 45);
+}
+
+.character-option{
+  border: none;
+  height: 24.5px;
+  opacity: 0.7;
+}
+
+.character-option:hover{
+  transform: scale(1.05);
+  opacity: 1;
+  background-color: red;
 }
 </style>
