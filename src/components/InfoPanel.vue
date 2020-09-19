@@ -13,38 +13,38 @@
         
         <div class="portrait">
             <img
-            :src='"../assets/"+pictureFolder+"/1.png"' 
+            :src='"assets/"+pictureFolder+"/1.png"' 
             alt=""> 
             <img
             class= "portrait-overlay"
             id = "portrait-overlay1"
             v-show="timer < 10"
-            src="../assets/found.png" 
+            src="assets/found.png" 
             alt="">
             {{ portrait1 }}
         </div>
 
         <div class="portrait">
             <img 
-            :src='"../assets/"+pictureFolder+"/2.png"' 
+            :src='"assets/"+pictureFolder+"/2.png"' 
             alt="">
             <img
             class= "portrait-overlay"
             id = "portrait-overlay2"
-            src="../assets/found.png" 
+            src="assets/found.png" 
             alt="">
             {{ portrait2 }}
         </div>
 
         <div class="portrait">
             <img 
-            :src='"../assets/"+pictureFolder+"/3.png"' 
+            :src='"assets/"+pictureFolder+"/3.png"' 
             alt="">
             <img
             class= "portrait-overlay"
             id = "portrait-overlay3"
             v-show="timer < 10"
-            src="../assets/found.png" 
+            src="assets/found.png" 
             alt="">
             {{ portrait3 }}
         </div>
