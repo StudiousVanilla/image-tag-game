@@ -1,6 +1,6 @@
 <template>
   <div class="picture-container" id="container">
-    <img class="game-img" @click="showCoords()" src="assets/star/star.jpg" alt="">
+    <img class="game-img" @click="showCoords()" :src="image" alt="">
   </div>
 </template>
 
@@ -13,7 +13,8 @@ export default {
     return{
       x: 0,
       y: 0,
-      charactersFound: 0
+      charactersFound: 0,
+      image: require('@/assets/star/star.jpg')
     }
   },
 
