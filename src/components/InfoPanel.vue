@@ -6,23 +6,47 @@
     <div 
     class="portrait-container" 
     v-show="pictureNumber != 0">
-
         <div class="button-container">
+            
             <button @click="giveUp">Give up</button>
         </div>
         
         <div class="portrait">
-            <img :src='"../assets/"+pictureFolder+"/1.png"' alt=""> 
+            <img
+            :src='"../assets/"+pictureFolder+"/1.png"' 
+            alt=""> 
+            <img
+            class= "portrait-overlay"
+            id = "portrait-overlay1"
+            v-show="timer < 10"
+            src="../assets/found.png" 
+            alt="">
             {{ portrait1 }}
         </div>
 
         <div class="portrait">
-            <img :src='"../assets/"+pictureFolder+"/2.png"' alt="">
+            <img 
+            :src='"../assets/"+pictureFolder+"/2.png"' 
+            alt="">
+            <img
+            class= "portrait-overlay"
+            id = "portrait-overlay2"
+            src="../assets/found.png" 
+            alt="">
             {{ portrait2 }}
         </div>
 
         <div class="portrait">
-            <img :src='"../assets/"+pictureFolder+"/3.png"' alt=""> {{ portrait3 }}
+            <img 
+            :src='"../assets/"+pictureFolder+"/3.png"' 
+            alt="">
+            <img
+            class= "portrait-overlay"
+            id = "portrait-overlay3"
+            v-show="timer < 10"
+            src="../assets/found.png" 
+            alt="">
+            {{ portrait3 }}
         </div>
 
         <p>Timer: {{ timer }}</p>  
@@ -64,6 +88,15 @@ export default {
     align-items: center;
 }
 
+.portrait-overlay{
+    z-index: 40;
+    background: transparent ;
+    position: absolute;
+    width: 70px;
+    color: red;
+    display: none;
+}
+
 .portrait{
     width: 70px;
     height: 100px;
@@ -88,9 +121,9 @@ button{
     height: 70px;
     width: 70px;
     border-radius: 9999px;
-    border: 5px solid #85144b;
+    border: 5px solid purple;
     box-shadow: -1px 1px 1px -1px black;
-    color: #85144b;
+    color: purple;
     font-weight: 700;
     font-size: 15px;
     background-color: white;
