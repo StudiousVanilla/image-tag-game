@@ -1,6 +1,6 @@
 <template>
   <div class="picture-container" id="container3">
-    <img class="game-img" @click="showCoords()" src="../assets/waldo/waldo.jpg" alt="">
+    <img class="game-img" @click="showCoords()" src="https://i.ibb.co/MSF0SvC/waldo.jpg" alt="">
   </div>
 </template>
 

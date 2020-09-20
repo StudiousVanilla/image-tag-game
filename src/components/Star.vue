@@ -1,6 +1,6 @@
 <template>
   <div class="picture-container" id="container">
-    <img class="game-img" @click="showCoords()" src="https://i.redd.it/35w25pu2q9e41.jpg" alt="">
+    <img class="game-img" @click="showCoords()" src="https://i.ibb.co/3FZXYy8/star.jpg" alt="">
   </div>
 </template>
 

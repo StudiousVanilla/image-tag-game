@@ -12,42 +12,44 @@
         </div>
         
         <div class="portrait">
-            <img
-            :src='"../assets/"+pictureFolder+"/1.png"' 
-            alt=""> 
+            <img v-show="pictureFolder=='star'" src="https://i.ibb.co/w6D9d8q/star1.png" alt="">
+            <img v-show="pictureFolder=='wedding'" src="https://i.ibb.co/hRKKqyP/wedding1.png" alt=""> 
+            <img v-show="pictureFolder=='waldo'" src="https://i.ibb.co/YPVqTnm/waldo1.png" alt="">  
             <img
             class= "portrait-overlay"
             id = "portrait-overlay1"
             v-show="timer < 10"
-            src="../assets/found.png" 
+            src="https://i.ibb.co/kyQGgmL/found.png" 
             alt="">
             {{ portrait1 }}
         </div>
 
         <div class="portrait">
-            <img 
-            :src='"../assets/"+pictureFolder+"/2.png"' 
-            alt="">
+            <img v-show="pictureFolder=='star'" src="https://i.ibb.co/KXTD5Ld/star2.png" alt="">
+            <img v-show="pictureFolder=='wedding'" src="https://i.ibb.co/4sKzrCK/wedding2.png" alt=""> 
+            <img v-show="pictureFolder=='waldo'" src="https://i.ibb.co/J2tbTjH/waldo2.png" alt="">
             <img
             class= "portrait-overlay"
             id = "portrait-overlay2"
-            src="../assets/found.png" 
+            src="https://i.ibb.co/kyQGgmL/found.png"
             alt="">
             {{ portrait2 }}
         </div>
 
         <div class="portrait">
-            <img 
-            :src='"../assets/"+pictureFolder+"/3.png"' 
-            alt="">
+            <img v-show="pictureFolder=='star'" src="https://i.ibb.co/3dzTNLw/star3.png" alt="">
+            <img v-show="pictureFolder=='wedding'" src="https://i.ibb.co/bKbpLLd/wedding3.png" alt=""> 
+            <img v-show="pictureFolder=='waldo'" src="https://i.ibb.co/K9fY31G/waldo3.png" alt="">
             <img
             class= "portrait-overlay"
             id = "portrait-overlay3"
             v-show="timer < 10"
-            src="../assets/found.png" 
+            src="https://i.ibb.co/kyQGgmL/found.png" 
             alt="">
             {{ portrait3 }}
         </div>
+
+
 
         <p>Timer: {{ timer }}</p>  
 
