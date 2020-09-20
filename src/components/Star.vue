@@ -1,6 +1,6 @@
 <template>
   <div class="picture-container" id="container">
-    <img class="game-img" @click="showCoords()" :src="image" alt="">
+    <img class="game-img" @click="showCoords()" src="https://i.redd.it/35w25pu2q9e41.jpg" alt="">
   </div>
 </template>
 
@@ -14,7 +14,6 @@ export default {
       x: 0,
       y: 0,
       charactersFound: 0,
-      image: require('@/assets/star/star.jpg')
     }
   },
 
