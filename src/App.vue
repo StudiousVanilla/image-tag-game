@@ -311,6 +311,7 @@ ol{
   width: fit-content;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .game-img{
@@ -323,6 +324,7 @@ ol{
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
+  width: 100%;
 }
 
 .picture-select{

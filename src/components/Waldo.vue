@@ -29,6 +29,7 @@ export default {
       this.y = event.clientY - (rect.top - 70);
       
       console.log('x:'+ this.x +' y:'+ this.y);
+      console.log(window.innerWidth);
 
       // uses coordinates to make a box on the picture
       this.makeBox(this.x,this.y)
@@ -42,7 +43,7 @@ export default {
       selectionContainer.setAttribute('id','red-box')
       selectionContainer.classList.add('selection-container')
       selectionContainer.style.position = 'absolute'
-      selectionContainer.style.left = x +'px'
+      selectionContainer.style.left = (x+((window.innerWidth - 1420)/2)-20) +'px'
       selectionContainer.style.top = y + 'px'
       selectionContainer.style.width = 'fit-content'
       selectionContainer.style.height = '80px'

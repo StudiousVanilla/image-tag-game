@@ -79,11 +79,12 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 1450px;
+    width: 100%;
 }
 
 .portrait-container{
     width: 100%;
+    max-width: 1420px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
