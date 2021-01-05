@@ -43,7 +43,16 @@ export default {
       selectionContainer.setAttribute('id','red-box')
       selectionContainer.classList.add('selection-container')
       selectionContainer.style.position = 'absolute'
-      selectionContainer.style.left = (x+((window.innerWidth - 1420)/2)-20) +'px'
+
+      // creates red selection box (uses relative size of viewport and image)
+      if(window.innerWidth >= 1420){
+        selectionContainer.style.left = (x+((window.innerWidth - 1420)/2)-20) +'px'
+      }
+      else{
+        selectionContainer.style.left = 
+          (x+((window.innerWidth - (window.innerWidth - 20))/2)-20) +'px'
+      }
+
       selectionContainer.style.top = y + 'px'
       selectionContainer.style.width = 'fit-content'
       selectionContainer.style.height = '80px'

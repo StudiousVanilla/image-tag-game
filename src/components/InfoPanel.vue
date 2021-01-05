@@ -1,7 +1,7 @@
 <template>
   <div class="info-panel">
     <div v-show="pictureNumber == 0" >
-        Choose a picture to start the timer
+        Choose a theme to start the timer
     </div>
     <div 
     class="portrait-container" 
@@ -79,7 +79,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    font-size: 1.5em;
 }
 
 .portrait-container{

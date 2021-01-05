@@ -20,45 +20,48 @@
     />
 
     <div class="picture-buttons" v-show="pictureNumber == 0">
-      <div>
+
+      <div class="picture-info">
         <!-- initialises game based on picture selected-->
         <button class="picture-select" 
         @click="pictureNumber = 1, pictureFolder = 'star', inGame = true,startGame()"
-        style="color:gold">Star Wars
+        style="border-color:gold">Star Wars
         </button>
-
         <ol>
           <!-- Displays first 5 the scores from the relevant score data  -->
           <li  v-for="player of scores1.slice(0,5)" :key="player.Name"> 
-            {{ player.name }} - {{ player.score }}
+             <span class="player-name-list" style="border-bottom:2px solid gold">{{ player.name }}</span> - 
+             <span class="player-score-list">{{player.score }}</span> 
           </li>
         </ol>
       </div>
 
-      <div>
-
+      <div class="picture-info">
       <button class="picture-select" 
       @click="pictureNumber = 2, pictureFolder = 'wedding', inGame = true,startGame()"
-      style="color:red">Wedding
+      style="border-color:red">Wedding
       </button>
         <ol>
           <li  v-for="player of scores2.slice(0,5)" :key="player.name"> 
-            {{ player.name }} - {{ player.score }}
+             <span class="player-name-list" style="border-bottom:2px solid red">{{ player.name }}</span> - 
+             <span class="player-score-list">{{player.score }}</span> 
           </li>
         </ol>
       </div>
 
-      <div>
+      <div class="picture-info">
       <button class="picture-select" 
       @click="pictureNumber = 3, pictureFolder = 'waldo', inGame = true, startGame()"
-      style="color:lightgreen">Waldo
+      style="border-color:green">Waldo
       </button>
        <ol>
           <li  v-for="player of scores3.slice(0,5)" :key="player.name"> 
-            {{ player.name }} - {{ player.score }}
+             <span class="player-name-list" style="border-bottom:2px solid green">{{ player.name }}</span> - 
+             <span class="player-score-list">{{player.score }}</span>
           </li>
         </ol>
       </div>
+
     </div>
 
     <Star 
@@ -288,7 +291,7 @@ export default {
 <style>
 *{
   margin: 0;
-  background-color: #DDDDDD;
+  background-color: rgb(255, 255, 255);
   font-weight: 700;
 }
 
@@ -301,6 +304,8 @@ export default {
   margin-top: 100px;
 }
 
+
+
 ol{
   margin: 20px 0px 0px 25px;
   padding: 0px;
@@ -312,6 +317,8 @@ ol{
   display: flex;
   justify-content: center;
   margin: auto;
+  max-width: 1420px;
+  min-width: 1420px;
 }
 
 .game-img{
@@ -325,12 +332,26 @@ ol{
   justify-content: space-evenly;
   margin-top: 100px;
   width: 100%;
+  height: 40vh;
+}
+
+.picture-info{
+  height: 100%;
+  width: 20%;
+  padding: 10px 5px;
 }
 
 .picture-select{
-  font-size: 20px;
-  font-weight: 500;
-  background-color: rgb(46, 45, 45);
+  padding: 5px 10px;
+  font-size: 2em;
+  font-weight: 600;
+  box-shadow: -3px 3px 3px 3px rgb(173, 173, 173);
+  border: none;
+  border-bottom: 3px solid;
+}
+
+.picture-select:hover{
+  transform: scale(1.05);
 }
 
 .character-option{
@@ -346,7 +367,17 @@ ol{
 }
 
 ol{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px 0px 0px 33%;
   text-align: left;
+  font-size: 1.3em;
+}
+
+::marker{
+  color: transparent
 }
 
 </style>
