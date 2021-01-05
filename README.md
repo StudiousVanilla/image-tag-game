@@ -1,24 +1,10 @@
-# image-tag-game
 
-## Project setup
-```
-npm install
-```
+This web app is an image tagging game. Select a theme and find all the characters as fast as you can.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This web app was built to show proficency in the JS framework Vue. 
+This project also made extensive use of Vanilla JS.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Google cloud Firestore is used to store player names and scores.
+Link: https://firebase.google.com/docs/firestore
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Made by Oisín Byrne - 2020
