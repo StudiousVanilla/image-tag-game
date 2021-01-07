@@ -10,4 +10,4 @@ Link to live demo - https://studiousvanilla.github.io/image-tag-game/
 
 [![Screenshot-2021-01-07-at-12-40-33.png](https://i.postimg.cc/GhsC6CTV/Screenshot-2021-01-07-at-12-40-33.png)](https://postimg.cc/GHrVs6Qx)
 
-Made by Oisín Byrne - 2020
+Made by Oisín Byrne - 2020 - https://studiousvanilla.github.io/portfolio/
