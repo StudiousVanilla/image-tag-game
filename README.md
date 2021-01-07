@@ -1,9 +1,9 @@
 This web app is an image tagging game. Select a theme and find all the characters as fast as you can.
 
-This web app was built to show proficency in the JS framework Vue. 
-This project also made extensive use of Vanilla JS.
+This web app was built to show proficency in the **JS framework Vue**. 
+This project also made extensive use of **Vanilla JS**.
 
-Google cloud Firestore is used to store player names and scores.
+Google cloud **Firestore** is used to store player names and scores.
 Link: https://firebase.google.com/docs/firestore
 
 Link to live demo - https://studiousvanilla.github.io/image-tag-game/
