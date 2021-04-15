@@ -1,3 +1,5 @@
+# Vue Image Tagging Game
+
 This web app is an image tagging game. Select a theme and find all the characters as fast as you can.
 
 This web app was built to show proficency in the **JS framework Vue**. 
