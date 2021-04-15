@@ -1,4 +1,4 @@
-# Vue Image Tagging Game
+# Vue Image Tagging Game :mag:
 
 This web app is an image tagging game. Select a theme and find all the characters as fast as you can.
 
@@ -12,4 +12,4 @@ Link to live demo - https://studiousvanilla.github.io/image-tag-game/
 
 [![Screenshot-2021-01-07-at-12-40-33.png](https://i.postimg.cc/GhsC6CTV/Screenshot-2021-01-07-at-12-40-33.png)](https://postimg.cc/GHrVs6Qx)
 
-Made by Oisín Byrne - 2020 - https://studiousvanilla.github.io/portfolio/
+Made by Oisín Byrne - 2020 - https://www.oisinbyrne.me/
